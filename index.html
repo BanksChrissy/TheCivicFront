@@ -10,7 +10,7 @@
       padding: 0;
       font-family: sans-serif;
       background-color: #f9f9f9;
-      text-align: center;
+      text-align: center; /* center most content */
     }
     .header-container {
       padding-top: 40px;
@@ -28,10 +28,18 @@
       max-width: 900px;
       margin: 40px auto;
       padding: 0 20px;
-      text-align: left;
+      text-align: center; /* center text by default */
       line-height: 1.6;
       color: #111;
-      white-space: pre-wrap;
+    }
+
+    /* Bullet points left-aligned only */
+    .manifesto ul {
+      text-align: left;
+      display: inline-block; /* keeps it centered in the middle of the page */
+      padding-left: 20px;
+      margin: 1em auto;
+      list-style-position: outside;
     }
     .manifesto h2, .manifesto h3, .manifesto h4 {
       color: #222;
